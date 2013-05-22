@@ -1,0 +1,13 @@
+PyroCMS Plugin Redirect
+=======
+
+Allows you to set the redirect with status code.
+
+How to use:
+=======
+301 Moved Permanently:
+{{ redirect:w301 if="http://example.com/url/to/old/page" url="http://example.com/url/to/new/page" }}
+Put this tag on your page 404
+
+Specify the code:
+{{ redirect:with code="302" url="_url_"}}
