@@ -1,7 +1,6 @@
-PyroCMS Plugin Redirect
-=======
+<p style="font-size:14pt">PyroCMS *Redirect* Plugin </p>
 
-Allows you to set the redirect with status code.
+Allows you to set the redirect *with status code*.
 
 How to use:
 =======
