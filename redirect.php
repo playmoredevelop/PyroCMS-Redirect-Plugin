@@ -27,65 +27,65 @@ class Plugin_Redirect extends Plugin {
     public function _self_doc() {
 	$info = array(
 	    'refresh' => array(
-		'description' => array(// a single sentence to explain the purpose of this method
+		'description' => array(
 		    'en' => 'Redirect to url',
 		    'ru' => ''
 		),
-		'single' => true, // will it work as a single tag?
-		'double' => false, // how about as a double tag?
-		'variables' => 'url', // list all variables available inside the double tag. Separate them|like|this
+		'single' => true, 
+		'double' => false, 
+		'variables' => 'url', 
 		'attributes' => array(
-		    'url' => array(// this is the name="World" attribute
-			'type' => 'text', // Can be: slug, number, flag, text, array, any.
-			'flags' => '', // flags are predefined values like asc|desc|random.
-			'default' => '', // this attribute defaults to this if no value is given
-			'required' => false, // is this attribute required?
+		    'url' => array(
+			'type' => 'text', 
+			'flags' => '', 
+			'default' => '', 
+			'required' => false, 
 		    ),
 		),
 	    ),
 	    'w301' => array(
-		'description' => array(// a single sentence to explain the purpose of this method
+		'description' => array(
 		    'en' => '301 Moved Permanently if page not found. Add a tag to your page with an error 404',
 		    'ru' => ''
 		),
-		'single' => true, // will it work as a single tag?
-		'double' => false, // how about as a double tag?
-		'variables' => 'if|url', // list all variables available inside the double tag. Separate them|like|this
+		'single' => true, 
+		'double' => false, 
+		'variables' => 'if|url', 
 		'attributes' => array(
-		    'if' => array(// this is the name="World" attribute
-			'type' => 'text', // Can be: slug, number, flag, text, array, any.
-			'flags' => '', // flags are predefined values like asc|desc|random.
-			'default' => '', // this attribute defaults to this if no value is given
-			'required' => true, // is this attribute required?
+		    'if' => array(
+			'type' => 'text', 
+			'flags' => '', 
+			'default' => '',
+			'required' => true,
 		    ),
-		    'url' => array(// this is the name="World" attribute
-			'type' => 'text', // Can be: slug, number, flag, text, array, any.
-			'flags' => '', // flags are predefined values like asc|desc|random.
-			'default' => '', // this attribute defaults to this if no value is given
-			'required' => true, // is this attribute required?
+		    'url' => array(
+			'type' => 'text',
+			'flags' => '',
+			'default' => '',
+			'required' => true,
 		    ),
 		),
 	    ),
 	    'with' => array(
-		'description' => array(// a single sentence to explain the purpose of this method
+		'description' => array(
 		    'en' => 'Manually specify the code to redirect',
 		    'ru' => ''
 		),
-		'single' => true, // will it work as a single tag?
-		'double' => false, // how about as a double tag?
-		'variables' => 'code|url', // list all variables available inside the double tag. Separate them|like|this
+		'single' => true,
+		'double' => false,
+		'variables' => 'code|url',
 		'attributes' => array(
-		    'code' => array(// this is the name="World" attribute
-			'type' => 'text', // Can be: slug, number, flag, text, array, any.
-			'flags' => '', // flags are predefined values like asc|desc|random.
-			'default' => '', // this attribute defaults to this if no value is given
-			'required' => true, // is this attribute required?
+		    'code' => array(
+			'type' => 'text',
+			'flags' => '',
+			'default' => '',
+			'required' => true,
 		    ),
-		    'url' => array(// this is the name="World" attribute
-			'type' => 'text', // Can be: slug, number, flag, text, array, any.
-			'flags' => '', // flags are predefined values like asc|desc|random.
-			'default' => '', // this attribute defaults to this if no value is given
-			'required' => true, // is this attribute required?
+		    'url' => array(
+			'type' => 'text',
+			'flags' => '',
+			'default' => '',
+			'required' => true,
 		    ),
 		),
 	    ),
