@@ -1,12 +1,25 @@
-<p style="font-size:14pt">PyroCMS *Redirect* Plugin </p>
+<h2>PyroCMS *Redirect* Plugin </h2>
 
 Allows you to set the redirect *with status code*.
+<hr>
 
 How to use:
-=======
-301 Moved Permanently:
-{{ redirect:w301 if="http://example.com/url/to/old/page" url="http://example.com/url/to/new/page" }}
-Put this tag on your page 404
 
-Specify the code:
-{{ redirect:with code="302" url="_url_"}}
+<h3>301 Moved Permanently:</h3>
+<code>{{ redirect:w301 if="example/url/to/old/page" url="example/url/to/new/page" }}</code>
+
+Put this tag on your 404-page like:
+<code>{{ redirect:w301 if="example/url/to/old/page1" url="example/url/to/new/page1" }}</code>
+<code>{{ redirect:w301 if="example/url/to/old/page2" url="example/url/to/new/page2" }}</code>
+<code>{{ redirect:w301 if="example/url/to/old/page3" url="example/url/to/new/page3" }}</code>
+<code>{{ redirect:w301 if="example/url/to/old/page4" url="example/url/to/new/page4" }}</code>
+
+<h3>Specify the code:</h3>
+<code>{{ redirect:with code="302" url="_url_"}}</code>
+
+<h3>Simple Redirects:</h3>
+Redirect to base url
+<code>{{ redirect:refresh }}</code>
+Redirect to /news
+<code>{{ redirect:refresh url="/news" }}</code>
+
