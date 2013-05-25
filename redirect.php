@@ -109,10 +109,10 @@ class Plugin_Redirect extends Plugin {
      * {{ redirect:w301 if="_url404_" url="_redirect_" }}
      */
     public function w301() {
-	$this->_init();
 
-	if ($url404 = $this->attribute('if', FALSE) AND $url404 = $this->uri->uri_string()) {
+	if ($url404 = $this->attribute('if', FALSE) AND $url404 == $_SERVER['REQUEST_URI']) {
 
+		$this->_init();
 	    return redirect($this->_url, 'auto', 301);
 	}
     }
